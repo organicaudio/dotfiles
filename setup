@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+set -eu
+
+[ -d ~/.cider ] || git clone https://github.com/johan/dotfiles ~/.cider
+command -v pip   >/dev/null || sudo -H easy_install pip
+command -v cider >/dev/null || sudo -H pip install cider
+command -v brew  >/dev/null || /usr/bin/ruby -e \
+  "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+cider restore

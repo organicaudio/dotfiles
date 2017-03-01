@@ -1,0 +1,60 @@
+# inspired by https://github.com/alias-mac/dotfiles/blob/master/osx/set-defaults.sh
+---
+NSGlobalDomain:
+  # press and hold o (for instance) for accented versions
+  ApplePressAndHoldEnabled: true
+
+  # Enable full keyboard access in all controls, e g enable Tab in modal dialogs
+  # (System Preferences → Keyboard → Keyboard Shortcuts)
+  AppleKeyboardUIMode: 3
+
+  # and never s/autocorrect/autodestroy/;
+  # it gets right things wrong more often than the other way around for me
+  NSAutomaticSpellingCorrectionEnabled: true
+  WebAutomaticSpellingCorrectionEnabled: 0
+
+  # Finder: show all filename extensions
+  AppleShowAllExtensions: true
+
+  # Add a context menu item for showing the Web Inspector in webviews
+  WebKitDeveloperExtras: true
+
+  # Region US, Swedish keymap
+  AppleLanguages: ["en-US", "sv-US"]
+  AppleLocale: "en_US"
+  AppleMeasurementUnits: "Centimeters"
+
+com.apple.HIToolbox:
+  AppleCurrentKeyboardLayoutInputSourceID: "com.apple.keylayout.Swedish-Pro"
+
+com.apple.Safari:
+  FindOnPageMatchesWordStartsOnly: false # let ⌘f find text anywhere in the page
+
+  # Enable the Develop menu and the Web Inspector in Safari
+  IncludeDevelopMenu: true
+  WebKitDeveloperExtrasEnabledPreferenceKey: true
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled: true
+
+
+# Use scroll gesture with modifier keys to zoom
+com.apple.universalaccess:
+  closeViewScrollWheelToggle: 1
+com.apple.AppleMultitouchTrackpad:
+  HIDScrollZoomModifierMask: 262144
+com.apple.driver.AppleBluetoothMultitouch.trackpad:
+  HIDScrollZoomModifierMask: 262144
+
+com.apple.finder:
+  WarnOnEmptyTrash: false # Disable the warning before emptying the Trash
+
+com.apple.NetworkBrowser:
+   BrowseAllInterfaces: true # AirDrop over Ethernet, & on unsupported Lion Macs
+
+################################################################################
+
+com.apple.screensaver:
+  askForPassword: 1 # Require password after sleep or screen saver begins
+  askForPasswordDelay: 5 # ...after 5 minutes of inactivity
+
+com.iconfactor.mac.xScope:
+  generalShowDockIcon: false

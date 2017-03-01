@@ -1,0 +1,32 @@
+---
+casks:
+- flux # f.lux: dim the blues at night for better sleep
+- spectacle # <mash>-arrows: move around windows between (fractions of) displays
+
+# quicklook all the things: apk, csv, gif, json, webp
+- quicklookapk
+- quicklook-csv
+# animated-gif-quicklook # might crap out; do by hand as needed
+- quickjson
+- webpquicklook
+
+formulas:
+- jhead # to peek at / tweak jpeg headers
+- jpeg # for jpegtran lossless jpeg operations
+- emacs
+- git
+- nvm # node
+
+# everything pike wants/needs
+- gmp
+- libtiff
+- nettle
+- pcre
+- pike
+
+taps:
+- caskroom/cask
+- homebrew/core
+
+after:
+- scripts/after.sh
