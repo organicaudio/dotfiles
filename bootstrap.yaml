@@ -24,6 +24,9 @@ formulas:
 - pcre
 - pike
 
+symlinks:
+  ".zshrc": "~"
+
 taps:
 - caskroom/cask
 - homebrew/core
