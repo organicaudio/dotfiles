@@ -2,7 +2,7 @@
 ---
 NSGlobalDomain:
   # press and hold o (for instance) for accented versions
-  ApplePressAndHoldEnabled: true
+  # ApplePressAndHoldEnabled: true  #---- is this needed anymore
 
   # Enable full keyboard access in all controls, e g enable Tab in modal dialogs
   # (System Preferences → Keyboard → Keyboard Shortcuts)
@@ -19,13 +19,10 @@ NSGlobalDomain:
   # Add a context menu item for showing the Web Inspector in webviews
   WebKitDeveloperExtras: true
 
-  # Region US, Swedish keymap
-  AppleLanguages: ["en-US", "sv-US"]
-  AppleLocale: "en_US"
+  # Region CAN, Regular Keymap
+  AppleLanguages: ["en-CA"]
+  AppleLocale: "en_CA"
   AppleMeasurementUnits: "Centimeters"
-
-com.apple.HIToolbox:
-  AppleCurrentKeyboardLayoutInputSourceID: "com.apple.keylayout.Swedish-Pro"
 
 com.apple.Safari:
   FindOnPageMatchesWordStartsOnly: false # let ⌘f find text anywhere in the page
@@ -37,12 +34,13 @@ com.apple.Safari:
 
 
 # Use scroll gesture with modifier keys to zoom
-com.apple.universalaccess:
-  closeViewScrollWheelToggle: 1
-com.apple.AppleMultitouchTrackpad:
-  HIDScrollZoomModifierMask: 262144
-com.apple.driver.AppleBluetoothMultitouch.trackpad:
-  HIDScrollZoomModifierMask: 262144
+### EXPLORE WHAT THIS SETTING DOES
+# com.apple.universalaccess:
+#   closeViewScrollWheelToggle: 1
+# com.apple.AppleMultitouchTrackpad:
+#   HIDScrollZoomModifierMask: 262144
+# com.apple.driver.AppleBluetoothMultitouch.trackpad:
+#   HIDScrollZoomModifierMask: 262144
 
 com.apple.finder:
   WarnOnEmptyTrash: false # Disable the warning before emptying the Trash
